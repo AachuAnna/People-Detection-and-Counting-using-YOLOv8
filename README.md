@@ -1,22 +1,20 @@
 # People Detection and Counting using YOLOv8
 
-## 📌 Project Description
-This project detects and counts the number of people present in an image using a pretrained YOLOv8 object detection model. The program reads an image, identifies people in the image, draws bounding boxes around them, and displays the total number of people detected.
-
-The project is implemented using Python, OpenCV, and the Ultralytics YOLOv8 framework, and is designed to run in Google Colab without any hardware requirements.
+## 📌 Project Overview
+This project detects and counts the number of people present in an image using a pretrained YOLOv8 object detection model. The system reads an input image, identifies people, draws bounding boxes around detected individuals, and displays the total number of people detected. The project is implemented using Python, OpenCV, and runs in Google Colab without requiring any hardware.
 
 ---
 
 ## 🎯 Objectives
-- To detect people in an image using a deep learning model  
+- To detect people in an image automatically using deep learning  
 - To draw bounding boxes around detected individuals  
 - To count the total number of people present in the image  
-- To understand the use of pretrained models for computer vision tasks  
+- To understand the application of pretrained models in computer vision  
 
 ---
 
 ## 🧠 About YOLOv8
-YOLO (You Only Look Once) is a deep learning-based object detection algorithm that processes the entire image in a single forward pass. YOLOv8 is the latest version, offering improved accuracy and speed. In this project, YOLOv8 is used to detect the **person** class from images.
+YOLO (You Only Look Once) is a deep learning-based object detection algorithm that processes the entire image in a single forward pass. YOLOv8 is the latest version of YOLO, offering improved accuracy and speed. In this project, YOLOv8 is used to detect the **person** class from images.
 
 ---
 
@@ -29,11 +27,40 @@ YOLO (You Only Look Once) is a deep learning-based object detection algorithm th
 
 ---
 
-## 🚀 Features
-- Detects people in an image using YOLOv8  
-- Draws bounding boxes around detected people  
-- Counts the total number of people  
-- Simple and easy-to-understand code  
-- No hardware required  
+## 💻 Methodology
+- The input image is read using OpenCV  
+- The pretrained YOLOv8 model (`yolov8n.pt`) is loaded  
+- The model predicts objects in the image  
+- Only detections belonging to the **person** class are selected  
+- Bounding boxes are drawn around each detected person  
+- The total number of people is counted and displayed  
 
 ---
+
+## 🖼️ Output
+- Green bounding boxes are drawn around detected people  
+- The total number of people detected is shown on the image and printed in the console  
+
+---
+
+## ⚠️ Limitations
+- Some people may not be detected in dense crowd images  
+- Occlusion and small object sizes can reduce detection accuracy  
+- Detection performance depends on image quality and lighting  
+
+---
+
+## 📚 Learning Outcomes
+- Understanding object detection using YOLOv8  
+- Practical use of pretrained deep learning models  
+- Using OpenCV for image processing and visualization  
+- Running computer vision projects in Google Colab  
+
+---
+
+## 🧑‍🎓 Academic Use
+This project is intended for educational and academic purposes, including mini-projects and learning computer vision concepts.
+
+---
+
+
