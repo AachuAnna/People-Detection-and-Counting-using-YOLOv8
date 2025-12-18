@@ -58,9 +58,4 @@ YOLO (You Only Look Once) is a deep learning-based object detection algorithm th
 
 ---
 
-## 🧑‍🎓 Academic Use
-This project is intended for educational and academic purposes, including mini-projects and learning computer vision concepts.
-
----
-
 
